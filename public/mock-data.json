@@ -7,5 +7,12 @@
     { "name": "feature_3", "raw_value": 0.6,  "baseline_value": 0.4,  "shap_value": -0.4 },
     { "name": "feature_4", "raw_value": 0.75, "baseline_value": 0.15, "shap_value": 0.15 },
     { "name": "feature_5", "raw_value": 0.15, "baseline_value": 0.75, "shap_value": -0.75 }
+  ],
+  "top_words": [
+    { "name": "долг", "shap_value": -0.2},
+    { "name": "кредит", "shap_value": -0.3},
+    { "name": "работа", "shap_value": 0.7},
+    { "name": "дом", "shap_value": 0.7},
+    { "name": "машина", "shap_value": 0.7}
   ]
 }
