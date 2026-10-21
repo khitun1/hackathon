@@ -1,9 +1,8 @@
 import axios from "axios";
 import {stateData} from "@/composables/useAppState.js";
 
-const MAX_POLLING_ATTEMPTS = 50;
 
-export const startTaskPolling = (taskId, statusRef, { onSuccess, onError }) => {
+export const Inference = (taskId, statusRef, { onSuccess, onError }) => {
     let isPollingActive = true;
     let flowTimeout = null;
 
