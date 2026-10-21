@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+/* Решаем проблему с ломающимися шрифтами и базовыми стилями */
+@layer base {
+    html, body {
+        /* Насильно возвращаем шрифт от PrimeVue (тема Aura) */
+        font-family: var(--p-font-family), Inter, system-ui, -apple-system, sans-serif;
+    }
+}
+
+/*
+  Фикс серого прямоугольника в ProgressSpinner / Timeline.
+  Tailwind v4 агрессивно навешивает border-color по умолчанию на все элементы,
+  из-за чего SVG-маски и внутренние элементы спиннера закрашиваются.
+*/
+.p-progressspinner,
+.p-progressspinner-spinner,
+.p-progressspinner-circle {
+    border-color: transparent !important;
+}
